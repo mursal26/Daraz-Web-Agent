@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shoppin in Pakistan</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #f55f24;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      margin-left: 100px;
+      padding: 10px;
+    }
+
+    .navbar .search-bar {
+      width: 45%;
+      padding:15px;
+      border: none;
+    }
+
+    .navbar .nav-links a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: small;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      margin: 20px;
+    }
+
+    .hero-banner img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* Categories */
+    .categories {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+    .categories h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .category-list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .category-item {
+      background-color: #fafafa;
+      width: 120px;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .category-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .flash-sale, .for-you {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      min-width: 300px;
+    }
+
+    .flash-sale h2, .for-you h2 {
+      margin-bottom: 15px;
+      color: #e53935;
+    }
+
+    .products {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+      padding-bottom: 10px;
+    }
+
+    .products-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .product-card {
+      min-width: 170px;
+      background-color: #fff8f4;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #444;
+      font-size: 15px;
+    }
+
+    /* Load more */
+    .lm {
+      margin: 20px;
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+    }
+
+    .lm button {
+      width: 75%;
+      border-radius: 10px;
+      box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+      padding: 8px;
+      margin: 20px 170px;
+      border: 1px solid rgb(0, 204, 255);
+      font-size: large;
+      color: rgb(0, 204, 255);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #2d2d2d;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    .footer .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      gap: 30px;
+    }
+
+    .footer .footer-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer .footer-links a:hover {
+      color: #f57224;
+    }
+
+    .footer p {
+      margin-top: 10px;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo"><img src="https://lzd-img-global.slatic.net/us/domino/3b870cb043c7f8a9741cbf66329e294e.png" width="150px">
+    </div>
+    <input type="text" class="search-bar" placeholder="Search in Daraz">
+    <div class="nav-links">
+        <a href="#">SELL ON DARAZ</a>
+      <a href="#">LOGIN</a>
+      <a href="#">SIGNUP</a>
+    </div>
+  </header>
+
+
+  <!-- Categories -->
+  <section class="categories">
+    <h2>Categories</h2>
+    <div class="category-list">
+      <div class="category-item">Fashion</div>
+      <div class="category-item">Electronics</div>
+      <div class="category-item">Home Appliances</div>
+      <div class="category-item">Beauty</div>
+      <div class="category-item">Sports</div>
+      <div class="category-item">Groceries</div>
+      <div class="category-item">Toys</div>
+      <div class="category-item">Accessories</div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+        <img src="https://img.lazcdn.com/us/domino/19fa073a-e59d-4fa5-bb63-d476a703f702_PK-1976-688.jpg_2200x2200q80.jpg_.webp"
+        width="85%" height="400px" style="margin: 10px 70px;" alt="">
+<img src="https://img.lazcdn.com/us/domino/0dfea45b-d3da-4dfc-b1c2-42b1fb5b6c6c_PK-1976-688.jpg_2200x2200q80.jpg_.webp"
+width="95%" height="300px" style="margin: 10px 20px;" alt="">
+    </div>
+  </section>
+
+    <!-- Flash Sale -->
+    <div class="flash-sale">
+      <h2>Flash Sale</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="https://img.drz.lazcdn.com/static/pk/p/7576cb3054acb638116e21a747c31280.jpg_400x400q75.avif" alt="Product 1">
+          <p>Smart Watch - Rs.1999</p>
+        </div>
+        <div class="product-card">
+          <img src="https://img.drz.lazcdn.com/static/pk/p/079876e48655bc89b56679ba688e09a5.png_960x960q80.png_.webp" alt="Product 2">
+          <p>Wireless Earbuds - Rs.1499</p>
+        </div>
+        <div class="product-card">
+          <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROOQi3Mf7PFLF3UphYFpmLDLeHJbBNHRql7ahNLkfJb5o1V_Sf" alt="Product 3">
+          <p>Running Shoes - Rs.2999</p>
+        </div>
+        <div class="product-card">
+          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSvMCT37w8Z6C1jlbTDdBgQtCZdJpTT6lZMQqNIby3TA7orcMM1" alt="Product 4">
+          <p>Makeup Kit - Rs.999</p>
+        </div>
+        <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/e9db94337638fc27eb5c53a87340d9e8.jpg_720x720q80.jpg_.webp" alt="Product 1">
+            <p>Perfume - 999</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/123dff2c2eb99650f1b8304883465823.jpg_400x400q75.avif" alt="Product 1">
+            <p>Caps Rs.799 </p>
+          </div>
+      </div>
+    </div>
+
+    <!-- For You -->
+    <div class="for-you">
+      <h2>Just For You</h2>
+      <div class="products-wrap">
+        <div class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvDSOdwqt3zDgdOo8Q5axwH5qEDcIYpQACplR74XJOr6D6xz2i" alt="Product 5">
+          <p>Backpack - Rs.1199</p>
+        </div>
+        <div class="product-card">
+          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQcsoungBuUXqB9dKS3gvsxmqINf0tSUxMbUnMxNiHLRuZd_L6b" alt="Product 6">
+          <p>Wireless Keyboard - Rs.1799</p>
+        </div>
+        <div class="product-card">
+          <img src="https://img.drz.lazcdn.com/static/pk/p/3e8d7107f0fa5b5d36529d3843e7f6d6.jpg_720x720q80.jpg" alt="Product 7">
+          <p>Face Serum - Rs.799</p>
+        </div>
+        <div class="product-card">
+          <img src="https://img.drz.lazcdn.com/g/kf/S9e415037d6104a93a79ab3b0d6179556I.jpg_400x400q80.jpg_.webp" alt="Product 8">
+          <p>Customized Name Bracelet - Rs.149</p>
+        </div>
+        <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/a943d09a170ff912c7db6584591c7c36.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Zoomable Flash Light Torch - Rs.349</p>
+        </div>
+        <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/8e50b47ff2e185fd0a5334b3bbadf8c3.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>3 in 1 Charging Cable - Rs.225</p>
+        </div>
+        <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/g/kf/Sf367c8992f4b4da48241a25395d230e6g.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Customized Name Ring - Rs.149</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/dfb89edc3ebdfa176439ff338ffa9cb1.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Ear Wax Cleaning Kit - Rs.99</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/f63b7c35fd0e5f79b43fc289062d9df2.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Premium Quality Wallet - Rs.299</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/9aafceb7719de628be5bcdc703bd395b.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Hand Gripper - Rs.399</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/a1bbac41eab0fa2c0fd83893e783a5ee.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Wireless Head Phone - Rs.2599</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/193d8d9aaf0025a51a258e358cfa1518.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Mini Portable Fan - Rs.499</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/4d7a41606451841110617e1be9dad88c.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Sneakers - Rs.949</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/3d8437c5be228a2c3b3cb46baec4a792.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Electric Beater - Rs.899</p>
+          </div>
+          <div class="product-card">
+            <img src="https://img.drz.lazcdn.com/static/pk/p/ab66442c24ac353c4e2a9817e617c1e0.jpg_400x400q80.jpg_.webp" alt="Product 8">
+            <p>Resistance Bands - Rs.499</p>
+          </div>
+      </div>
+    </div>
+
+
+  <!-- Load more -->
+  <section class="lm">
+    <button>Load more...</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Careers</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Help Center</a>
+      <a href="#">Return Policy</a>
+    </div>
+    <p>&copy; 2025 Daraz Clone. Created by You. All rights reserved.</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Daraz-agent"
+  agent-id="5a0852e2-c4bc-44ff-bd27-b89688a08047"
+  language-code="en"
+></df-messenger>
+
+</body>
+</html>
